@@ -171,3 +171,69 @@ Each major API feature gets its own subsection.
 I will first convert the image to AVIF (best compression and quality) or WebP (Fallback for wider support). these formats reduce file size dramatically while keeping good quailty.
 
 I will resize the image properly. The tools to use TinyPNG or ImageOPtim. The reason is for faster loading, better Core web Vitals, lower bandwidth usage and also improved SEO.
+
+            (2)
+
+srcset is an HTML image attribute that allows the browser to choose the most appropriate image file based on the user's screen size, resolution.
+
+            (3)
+
+rel="noopener" is important because it prevents malicious websites opened in a new tab from secretly taking control of the original page and tricking users into phishing or scam attacks.
+
+        Engineering Thinking
+
+## Class 04 Modern Forms & User Experience
+
+                (1)
+
+
+
+                (2)
+
+The autocomplete attribute tells the browser what kind of information an input field expects so it can: reduce typing effort,
+improve accessibility and mobile UX.
+
+        List 5 different values
+
+(1) email
+
+    <input type="email" autocomplete="email" />
+
+Give feedback
+Used for
+login forms,
+signup forms,
+newsletter subscriptions.
+
+(2) New Password
+
+    <input type="password" autocomplete="new-password" />
+
+Used for
+account creation,
+password reset forms.
+
+(3) Name
+
+    <input type="text" autocomplete="name" />
+
+Used for
+registration forms,
+checkout pages,
+profile settings.
+
+(4) current-password
+
+    <input type="password" autocomplete="current-password" />
+
+Used for
+login forms.
+
+(5) street-address
+
+    <input type="text" autocomplete="street-address" />
+
+Used for
+ecommerce checkout,
+delivery forms,
+billing information.
