@@ -109,12 +109,61 @@ Here, the book title is italicized but not emphasized.
 
                 (2)
 
-1. **`<button>`**
-   Screen readers recognize `<button>` as an interactive element. They announce it as a “button” and allow keyboard users to activate it easily. Browsers handle it specially because buttons are meant for actions like submitting forms or opening menus.
+1.  **`<button>`**
+    Screen readers recognize `<button>` as an interactive element. They announce it as a "button" and allow keyboard users to activate it easily. Browsers handle it specially because buttons are meant for actions like submitting forms or opening menus.
 
-2. **`<img>` with `alt` text**
-   Screen readers read the `alt` attribute to describe images for visually impaired users. This helps users understand the meaning or purpose of an image.
+2.  **`<img>` with `alt` text**
+    Screen readers read the `alt` attribute to describe images for visually impaired users. This helps users understand the meaning or purpose of an image.
 
-3. **`<a>` (Anchor Links)**
-   Screen readers identify links and often allow users to jump through them quickly. Browsers treat them specially because links are used for navigation between pages or sections.
-   This improves accessibility and page understanding.
+3.  **`<a>` (Anchor Links)**
+    Screen readers identify links and often allow users to jump through them quickly. Browsers treat them specially because links are used for navigation between pages or sections.
+    This improves accessibility and page understanding.
+
+                     (3)
+
+    Aria-label can be use when an element is has no visible text but still needs a description for screen reader. it okay to use correct semantic element.
+
+            Accessibility Reflection
+
+
+                    Product Thinking
+
+For a technical API documentation page, I would organize the content so developers can quickly scan, understand, and find what they need.
+
+## `<h1>` — Payment API Documentation
+
+This is the main title of the entire documentation page.
+
+## `<h2>` — Introduction
+
+Explain what the API does, supported formats (JSON, REST), and common use cases.
+
+### `<h3>` — Base URL
+
+Show the main API endpoint.
+
+### `<h3>` — Authentication
+
+Explain API keys, tokens, and authorization headers.
+
+## `<h2>` — Quick Start Guide
+
+Help developers make their first successful request quickly.
+
+### `<h3>` — Example Request
+
+Provide sample code using JavaScript or Python.
+
+### `<h3>` — Example Response
+
+Show sample JSON responses.
+
+---
+
+## `<h2>` — Endpoints
+
+Each major API feature gets its own subsection.
+
+### `<h3>` — GET /users
+
+Explain how to fetch users.
