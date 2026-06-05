@@ -128,7 +128,7 @@ Here, the book title is italicized but not emphasized.
 
                     Product Thinking
 
-For a technical API documentation page, I would organize the content so developers can quickly scan, understand, and find what they need.
+I would organize the content so developers can quickly scan, understand, and find what they need.
 
 ## `<h1>` — Payment API Documentation
 
@@ -164,6 +164,10 @@ Show sample JSON responses.
 
 Each major API feature gets its own subsection.
 
-### `<h3>` — GET /users
+## Class 03 Modern Assets & Linking
 
-Explain how to fetch users.
+            (1)
+
+I will first convert the image to AVIF (best compression and quality) or WebP (Fallback for wider support). these formats reduce file size dramatically while keeping good quailty.
+
+I will resize the image properly. The tools to use TinyPNG or ImageOPtim. The reason is for faster loading, better Core web Vitals, lower bandwidth usage and also improved SEO.
