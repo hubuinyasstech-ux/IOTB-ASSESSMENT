@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>content-box</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 40px;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        .wrapper {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+
+        .box {
+            width: 300px;
+            padding: 40px;
+            border: 12px solid #222;
+            background: white;
+            font-size: 18px;
+        }
+
+        /*
+    DEFAULT BOX MODEL
+
+  */
+        .content-box {
+            box-sizing: content-box;
+        }
+
+        /*
+    BORDER-BOX MODEL
+  */
+        .border-box {
+            box-sizing: border-box;
+        }
+
+
+        .container {
+            border: 3px dashed red;
+            padding: 10px;
+            background: #fff8f8;
+        }
+
+        .label {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        /*
+    Inner content area
+  */
+        .inner {
+            background: #dbeafe;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Box Model Comparison</h1>
+
+    <div class="wrapper">
+
+        <div class="container">
+            <div class="label">content-box (gets wider)</div>
+
+            <div class="box content-box">
+                <div class="inner">
+                    width: 300px<br>
+                    padding: 40px<br>
+                    border: 12px
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="label">border-box (stays 300px)</div>
+
+            <div class="box border-box">
+                <div class="inner">
+                    width: 300px<br>
+                    padding: 40px<br>
+                    border: 12px
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

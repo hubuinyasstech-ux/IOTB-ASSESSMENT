@@ -1,0 +1,34 @@
+<form>
+    <!-- Password Label -->
+    <label for="password">Create Password</label>
+
+    <div class="password-wrapper">
+        <!-- Password Input -->
+        <input type="password" id="password" name="password"
+            aria-describedby="password-help password-requirements password-strength" aria-required="true"
+            autocomplete="new-password" />
+
+        <!-- Show/Hide Toggle -->
+        <button type="button" id="togglePassword" aria-label="Show password" aria-pressed="false">
+            Show
+        </button>
+    </div>
+
+    <!-- Helper Text -->
+    <p id="password-help">
+        Password must meet all requirements below.
+    </p>
+
+    <!-- Strength Meter -->
+    <div id="password-strength" role="status" aria-live="polite">
+        Strength: Weak
+    </div>
+
+    <!-- Requirements Checklist -->
+    <ul id="password-requirements">
+        <li id="length" aria-live="polite">❌ At least 8 characters</li>
+        <li id="uppercase" aria-live="polite">❌ One uppercase letter</li>
+        <li id="number" aria-live="polite">❌ One number</li>
+        <li id="symbol" aria-live="polite">❌ One special character</li>
+    </ul>
+</form>

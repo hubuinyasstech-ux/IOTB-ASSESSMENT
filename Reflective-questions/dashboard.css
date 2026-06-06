@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+/*    DASHBOARD LAYOUT */
+
+.dashboard {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit,
+            minmax(250px, 1fr));
+
+    gap: 20px;
+
+    align-items: start;
+}
+
+/* PANELS*/
+
+.sidebar,
+.main,
+.right-panel {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+
+.main {
+    grid-column: span 2;
+}
+
+
+.sidebar nav {
+    display: grid;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #333;
+    background: #eee;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.sidebar a:hover {
+    background: #ddd;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit,
+            minmax(180px, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.card {
+    background: #e9ecef;
+    padding: 30px;
+    border-radius: 10px;
+    min-height: 120px;
+}
+
+/* RIGHT PANEL*/
+
+.right-panel {
+    display: grid;
+    gap: 14px;
+}
+
+.notification {
+    background: #eee;
+    padding: 14px;
+    border-radius: 8px;
+}

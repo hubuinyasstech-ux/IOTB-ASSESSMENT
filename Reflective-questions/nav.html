@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Centered Flexbox Navbar</title>
+
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /*
+    NAVBAR CONTAINER
+  */
+        .navbar {
+            display: flex;
+            align-items: center;
+            padding: 16px 40px;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .nav-side {
+            flex: 1;
+        }
+
+
+        .nav-right {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        /*
+    CENTER NAVIGATION
+  */
+        .nav-center ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-center a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+        }
+
+        /*
+    LOGO
+  */
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /*
+    BUTTON
+  */
+        .signin-btn {
+            padding: 10px 18px;
+            border: none;
+            background: black;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <!-- LEFT -->
+        <div class="nav-side nav-left">
+            <div class="logo">Hubu-Inyass Tech</div>
+        </div>
+
+        <!-- CENTER -->
+        <div class="nav-center">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="nav-side nav-right">
+            <button class="signin-btn">Sign In</button>
+        </div>
+
+    </nav>
+
+</body>
+
+</html>

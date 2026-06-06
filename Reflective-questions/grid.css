@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 40px;
+}
+
+.magazine {
+    display: grid;
+
+    /* 3-column magazine grid */
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Shared card styling */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    min-height: 150px;
+}
+
+/* HERO spans all 3 columns */
+.hero {
+    grid-column: 1 / 4;
+    min-height: 300px;
+}
+
+/* Each secondary article spans 1.5 columns visually */
+.secondary:first-of-type {
+    grid-column: 1 / 2;
+}
+
+.secondary:last-of-type {
+    grid-column: 2 / 4;
+}
+
+/* Wide article spans full width */
+.wide {
+    grid-column: 1 / 4;
+    min-height: 220px;
+}
+
+/* Small articles automatically occupy 3 columns */
+.small {
+    min-height: 120px;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+
+    .magazine {
+        grid-template-columns: 1fr;
+    }
+
+    .hero,
+    .secondary,
+    .wide,
+    .small {
+        grid-column: auto;
+    }
+}
